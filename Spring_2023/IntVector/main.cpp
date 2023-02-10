@@ -1,6 +1,6 @@
 #include <iostream>
 #include "IntVector.h"
-#include <cstddef>
+#include <cstddef>   // for size_t
 
 // Implement IntVector to store a sequence of integers
 // * the sequence length is fixed at construction time
@@ -20,8 +20,9 @@ int main()
     // write 99 in position 3 (index 2)
     test.write(2, 99);
 
-    // this should not work!!!
+    // these should not work!!!
     test.write(10000000, 99);
+    test.write(-1, 99);
 
     // print the whole sequence
     for (size_t i = 0; i < 10; ++i)
