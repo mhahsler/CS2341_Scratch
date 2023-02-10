@@ -25,6 +25,6 @@ add_compile_options(-Wall -Wextra -pedantic)
 # for more GCC compiler options see https://gcc.gnu.org/onlinedocs/gcc/Invoking-GCC.html
 
 # add all the .cpp files here
-add_executable(intVector main.cpp)
+add_executable(intVector main.cpp IntVector.cpp)
 
 set(CMAKE_VERBOSE_MAKEFILE OFF)
