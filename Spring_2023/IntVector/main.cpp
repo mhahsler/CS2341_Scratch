@@ -25,10 +25,37 @@ int main()
     test.write(-1, 99);
 
     // print the whole sequence
+    std::cout << "test: ";
     for (size_t i = 0; i < 10; ++i)
         std::cout << test.read(i) << " ";
     
     std::cout << "\n";
 
+    // Copy
+    std::cout << "copy: ";
+    IntVector copy(test);
+     for (size_t i = 0; i < 10; ++i)
+        std::cout << copy.read(i) << " ";
+    
+    std::cout << "\n";
+
+    IntVector copy2(100);
+    copy2 = test;
+
+    std::cout << "copy2: ";
+     for (size_t i = 0; i < 10; ++i)
+        std::cout << copy2.read(i) << " ";
+
+    // operator==
+    if (copy == copy2) 
+        std::cout << "copy is identical to copy 2" << "\n";
+
+    // operator[]=
+    std::cout << copy[2] << "\n"; 
+    int v = copy[2];
+    v++;
+
+    std::cout << copy[2] << "\n";
+    
     return 0;
 }

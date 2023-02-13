@@ -24,6 +24,10 @@ IntVector& operator= (const IntVector& rhs);
 
 int read(size_t index) const;
 void write(size_t index, int value);
+
+bool operator==(IntVector const & rhs ) const;
+int & operator[]( size_t pos );
+
 };
 
 
