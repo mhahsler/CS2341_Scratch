@@ -14,16 +14,16 @@ class DSList
     Node *head;
 
 public:
-    // Constructor (The rule of 3)
+    // Constructor 
 
     DSList()
     {
         head = nullptr;
     }
 
-    // Destructor
-    // Copy Constr.
-    // Copy assignment operator.
+    // Rule of 3: Destructor 
+    // Rule of 3: Copy constructor
+    // Rule of 3: Copy assignment operator
 
     // push_front
     void push_front(const Object &x)
