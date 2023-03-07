@@ -19,8 +19,10 @@ int main()
     std::cout << "first element: " << l.front() << "\n\n";
 
     l.pop_front();
-    l.remove(5); // remove all elements with value 5
-    std::cout << "size (after pos and remove): " << l.size() << "\n\n";
+    
+    // we will implement that later...
+    // l.remove(5); // remove all elements with value 5
+    // std::cout << "size (after pos and remove): " << l.size() << "\n\n";
 
     l.print();
 

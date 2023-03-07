@@ -2,56 +2,54 @@
 #define DSLIST_H
 
 template <typename Object>
-class DSList {
+class DSList
+{
 
     struct Node
-        {
-            Object data;
-            Node *next;
-        };
+    {
+        Object data;
+        Node *next;
+    };
 
-Node* head;
+    Node *head;
 
 public:
-// Constructor (The rule of 3)
+    // Constructor (The rule of 3)
 
-DSList() {
-    head = nullptr;
-}
+    DSList()
+    {
+        head = nullptr;
+    }
 
-// Destructor
-// Copy Constr.
-// Copy assignment operator.
+    // Destructor
+    // Copy Constr.
+    // Copy assignment operator.
 
+    // push_front
+    void push_front(const Object &x)
+    {
+        // 1. allocate new node
+        Node *newNode = new Node();
+        newNode->data = x;
 
-//push_front
-void push_front(const Object& x) {
-    // allocate
-    Node* newNode = new Node();
-    newNode->data = x;
-    // find: we know it goes right after head
-    // link
-    newNode->next = head;
-    head = newNode;
-}
+        // 2. find position: we know it goes right after head
 
-//empty
-bool empty() const {
-    retrun (head == nullptr);   
-}
+        // 3. link new node
+        newNode->next = head;
+        head = newNode;
+    }
 
+    // empty
+    bool empty() const
+    {
+        return (head == nullptr);
+    }
 
-//size
+    // size
 
-//front
-//pop_front
-//remove
-//print
-
-
+    // front
+    // pop_front
+    // print
 };
-
-
-
 
 #endif
