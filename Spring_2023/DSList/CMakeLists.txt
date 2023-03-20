@@ -25,6 +25,7 @@ add_compile_options(-Wall -Wextra -pedantic)
 # for more GCC compiler options see https://gcc.gnu.org/onlinedocs/gcc/Invoking-GCC.html
 
 # add all the .cpp files here
-add_executable(test_list test_list.cpp DSList.h)
+add_executable(test_list test_list.cpp)
+add_executable(test_list_with_copy test_list_with_copy.cpp)
 
 set(CMAKE_VERBOSE_MAKEFILE OFF)
