@@ -12,6 +12,7 @@ int main()
     for (size_t i = 10; i > 0; --i)
         l.push_front(i);
 
+  
     l.print(); // print the container's contents
     std::cout << "empty: " << l.empty() << "\n";
     std::cout << "size: " << l.size() << "\n\n";
