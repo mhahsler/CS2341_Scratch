@@ -18,5 +18,8 @@ int main() {
         return 2;
     }
     
+    IntCell cell2 = IntCell();
+     std::cout << cell2.read() << "\n";
+
     return 0;
 }
