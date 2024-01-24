@@ -13,7 +13,7 @@
 # to compile the project
 
 cmake_minimum_required(VERSION 3.0.0)
-project(hello_world VERSION 0.1.0)
+project(IntCell VERSION 0.1.0)
 
 # C++ Standard
 set(CMAKE_CXX_STANDARD 17)
@@ -25,6 +25,6 @@ add_compile_options(-Wall -Wextra -pedantic)
 
 # add all components that need to be compiled and linked (the .cpp and .h files with code)
 # Syntax: add_executable(Executable_Name <list of files to compile>)
-add_executable(hello_world main.cpp)
+add_executable(test_IntCell main.cpp IntCell.cpp)
 
 set(CMAKE_VERBOSE_MAKEFILE OFF)
